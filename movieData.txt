@@ -11,7 +11,7 @@
   "posterUrl": "http://bacchanpandey/posters/1",
   "language": "Hindi",
   "releaseDate": "18-03-2022",
-  "releaseSatus": "RELEASED"
+  "releaseStatus": "RELEASED"
 },
 {
   "name": "Jalsa",
@@ -25,7 +25,7 @@
   "posterUrl": "http://jalsa/posters/1",
   "language": "Hindi",
   "releaseDate": "18-03-2022",
-  "releaseSatus": "RELEASED"
+  "releaseStatus": "RELEASED"
 },
 
 {
@@ -40,7 +40,7 @@
   "posterUrl": "http://jhund/posters/1",
   "language": "Hindi",
   "releaseDate": "04-03-2022",
-  "releaseSatus": "RELEASED"
+  "releaseStatus": "RELEASED"
 },
 {
   "name": "Radhe Shyam",
@@ -54,7 +54,7 @@
   "posterUrl": "http://RadheShyam/posters/1",
   "language": "Hindi",
   "releaseDate": "11-03-2022",
-  "releaseSatus": "RELEASED"
+  "releaseStatus": "RELEASED"
 },
 
 {
@@ -69,6 +69,6 @@
   "posterUrl": "http://TheKashmirFiles/posters/1",
   "language": "Hindi",
   "releaseDate": "11-03-2022",
-  "releaseSatus": "RELEASED"
+  "releaseStatus": "RELEASED"
 }
 }

@@ -6,13 +6,13 @@ require('dotenv').config()
 const User = require ('./models/user.model')
 const serverConfig = require('./configs/server.config')
 const dbConfig = require('./configs/db.config')
-const {AuthRoutes,MovieRoutes} = require('./routes/index')
+const {AuthRoutes,MovieRoutes,TheatreRoutes} = require('./routes/index')
 
 const app = express()
 app.use(bodyParser.json())
 app.use(AuthRoutes)
 app.use(MovieRoutes)
-
+app.use(TheatreRoutes)
 
 mongoose.connect(dbConfig.DB_URL)
 const db = mongoose.connection

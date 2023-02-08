@@ -64,7 +64,7 @@ exports.updateTheatre = async(req, res)=>{
     res.status(200).send(updateTheatre);
 }
 
-exports.AddMoviesToTheater = async (req, res) =>{
+exports.updateMoviesToTheater = async (req, res) =>{
     const theaterId = req.params.theaterId;
     const movieId = req.params.movieId
 
@@ -76,11 +76,19 @@ exports.AddMoviesToTheater = async (req, res) =>{
 
     const movieIds =  req.body.movies;
 
+    if (req.body.insert ){
     movieIds.forEach(movieId => {
         saveTheater.movies.push(movieId)
         
-    });
-    const updateTheatre = await saveTheater.save();
+    })}
 
+    else if (req.body.Delete){
+        savedMovieIds = saveTheater.movies.filter((movieId)=>{
+            return !movieIds.includes(movieId.toString());
+        })
+        saveTheater.movies=savedMovieIds;
+    }
+
+    const updateTheatre = await saveTheater.save();
     return res.status(200).send(updateTheatre);
 }

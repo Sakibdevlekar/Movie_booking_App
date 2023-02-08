@@ -9,6 +9,8 @@ routes.get('/MovieBookingApp/api/v1/theaters',theatreController.getAllTheatre );
 routes.get('/MovieBookingApp/api/v1/theater/:id',theatreController.getTheatre );
 routes.delete('/MovieBookingApp/api/v1/theater/:id',theatreController.deleteTheatre );
 routes.put('/MovieBookingApp/api/v1/theater/:id',theatreController.updateTheatre);
-routes.put('/MovieBookingApp/api/v1/theater/:theaterId/movies',theatreController.AddMoviesToTheater);
+routes.put('/MovieBookingApp/api/v1/theater/:theaterId/movies',theatreController.updateMoviesToTheater);
+
+
 
 module.exports = {TheatreRoutes : routes} 
